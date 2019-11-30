@@ -30,7 +30,7 @@ namespace t1
             decimal resultadoResiduo = 2321.423m % 23m;
             double resultadoPotencia = Math.Pow(78, 2);
             double resultadoRaiz = Math.Sqrt(144);
-            Console.ReadLine();
+            //Console.ReadLine();
 
             int primerNumero = 48;
             int segundoNumero = 12;
@@ -73,17 +73,28 @@ namespace t1
             string[] diasSemanales = { "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo" };
             for (int dia = 0; dia < 7; dia++)
             {
-                Console.WriteLine("{0} es el número { 1} de la semana", diasSemanales[dia], dia + 1);
+                Console.WriteLine("{0} es el número {1} de la semana", diasSemanales[dia], dia + 1);
             }
 
             string frase = "La programación me permite crear";
             Console.WriteLine("{0}", frase.ToUpper());
             Console.WriteLine("{0}", frase.ToLower());
-            Console.WriteLine("{0} {1}", frase.Substring(1).ToUpper(), frase.Substring(1, frase.Length - 2).ToLower());
+            Console.WriteLine("{0}{1}", frase.Substring(0,1).ToUpper(), frase.Substring(1, frase.Length - 1).ToLower());
             int unMillon = 1000000;
             string numeroComoCaracter = unMillon.ToString();
+            Console.ReadLine();
 
+        }
+        double resultado = 0;
+        void LimpiarResultado()
+        {
+            resultado = 0;
 
+        }
+        double Multiplicar(int a, int b)
+        {
+            resultado = a + b;
+            return resultado;
         }
     }
 }
