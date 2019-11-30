@@ -31,6 +31,21 @@ namespace t1
             double resultadoPotencia = Math.Pow(78, 2);
             double resultadoRaiz = Math.Sqrt(144);
             Console.ReadLine();
+
+            int primerNumero = 48;
+            int segundoNumero = 12;
+            primerNumero += segundoNumero;
+            primerNumero -= segundoNumero;
+            primerNumero *= segundoNumero;
+            primerNumero /= segundoNumero;
+            primerNumero %= segundoNumero;
+            primerNumero++;
+            primerNumero--;
+
+            bool comparacionY = true && true;
+            var comparacionO = true || false;
+            bool comparacionIgual = comparacionY == comparacionO;
+            bool valorNegado = !comparacionIgual;
         }
     }
 }
