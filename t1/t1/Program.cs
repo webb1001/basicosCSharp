@@ -46,6 +46,30 @@ namespace t1
             var comparacionO = true || false;
             bool comparacionIgual = comparacionY == comparacionO;
             bool valorNegado = !comparacionIgual;
+
+            if (DateTime.Now.Minute % 2 == 0)
+            {
+                Console.WriteLine("Este minuto es par");
+            }
+            else if (DateTime.Now.Minute == 5)
+            {
+                Console.WriteLine("Este es el minuto 5");
+            }
+            else
+            {
+                Console.WriteLine("Este minuto es impar");
+            }
+            int rondasFaltantes = 3;
+            while (rondasFaltantes > 0)
+            {
+                rondasFaltantes--;
+            }
+            rondasFaltantes = 3;
+            do
+            {
+                rondasFaltantes--;
+            } while (rondasFaltantes > 0);
+
         }
     }
 }
